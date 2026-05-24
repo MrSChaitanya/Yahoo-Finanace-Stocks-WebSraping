@@ -32,12 +32,13 @@ pip install selenium pandas numpy openpyxl
 ## 📂 Project Structure
 
 ```text
-Project 01 - Stock Prices/
+Stock Prices/
 │
-├── 01. stocks-scraper.py               # Monolithic standalone scraping script
-├── 02. restructured-stocks-scraper.py  # Optimized/modular version of the scraper
-├── project 1.pdf                       # Project requirements and documentation
-└── yahoo_finance-stocks.xlsx           # Final cleaned output data sheet
+├── stocks-scraper.py               # Monolithic standalone scraping script
+├── restructured-stocks-scraper.py  # Optimized/modular version of the scraper
+├── requirements.txt                # Project dependencies configuration file
+├── README.md                       # Documentation and project guide
+└── yahoo_finance-stocks.xlsx       # Final cleaned output data sheet
 ```
 ---
 
