@@ -27,53 +27,19 @@ Install the required Python packages using `pip`:
 
 ```bash
 pip install selenium pandas numpy openpyxl
-
-
-📂 Project Structure
-Plaintext
-Project 01 - Stock Prices/
-│
-├── stocks-scraper.py                # Monolithic standalone scraping script
-├── restructured-stocks-scraper.py   # Optimized/modular version of the scraper
-├── project 1.pdf                    # Project requirements and documentation
-└── yahoo_finance-stocks.xlsx        # Final cleaned output data sheet
-💻 How to Run
-Clone or navigate to your local project directory.
-
-Run either version of the script using your terminal:   
-
-To run the standard scraper:   
-
-Bash
-python "stocks-scraper.py"
-To run the production-ready modular scraper:   
-
-Bash
-python "restructured-stocks-scraper.py"
-📊 Data Pipeline Details
-  
-The scraper navigates to the target stock page, waits for the dynamic elements to load securely, and extracts the following fields:   
-
-Ticker Symbol / Company Name   
-
-Stock Price (Stripped of local currency symbols and formatted as floats)   
-
-Price Movements / Percentage Changes   
-
-Trading Volumes   
-
-The Pandas data-cleaning pipeline automatically drops duplicates, handles missing (NaN) values gracefully, ensures proper data type casting, and standardizes column headers before saving to Excel.
-
+```
+---
 ## 📂 Project Structure
 
 ```text
 Project 01 - Stock Prices/
 │
-├── stocks-scraper.py               # Monolithic standalone scraping script
-├── restructured-stocks-scraper.py  # Optimized/modular version of the scraper
+├── 01. stocks-scraper.py               # Monolithic standalone scraping script
+├── 02. restructured-stocks-scraper.py  # Optimized/modular version of the scraper
 ├── project 1.pdf                       # Project requirements and documentation
 └── yahoo_finance-stocks.xlsx           # Final cleaned output data sheet
-
+```
+---
 
 ## 💻 How to Run
 Clone or navigate to your local project directory.
@@ -81,25 +47,26 @@ Clone or navigate to your local project directory.
 Run either version of the script using your terminal:
 
 To run the standard scraper:
-
 ```bash
 python "stocks-scraper.py"
-
+```
 To run the production-ready modular scraper:
-
 ```bash
 python "restructured-stocks-scraper.py"
-
+```
+---
 
 ## 📊 Data Pipeline Details
+
 The scraper navigates to the target stock page, waits for the dynamic elements to load securely, and extracts the following fields:
 
-Ticker Symbol / Company Name
+* **Ticker Symbol / Company Name**
+* **Stock Price** (Stripped of local currency symbols and formatted as floats)
+* **Price Movements / Percentage Changes**
+* **Trading Volumes**
 
-Stock Price (Stripped of local currency symbols and formatted as floats)
+The Pandas data-cleaning pipeline automatically drops duplicates, handles missing (`NaN`) values gracefully, ensures proper data type casting, and standardizes column headers before saving to Excel.
 
-Price Movements / Percentage Changes
 
-Trading Volumes
 
-The Pandas data-cleaning pipeline automatically drops duplicates, handles missing (NaN) values gracefully, ensures proper data type casting, and standardizes column headers before saving to Excel.
+
